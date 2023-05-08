@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Go Tune</title>
+  <link rel="stylesheet" href="/Assets/css/all.css">
+  <link rel="stylesheet" href="/general.css">
+  <link rel="stylesheet" href="/header.css">
+  <link rel="stylesheet" href="/nav.css">
+  <link rel="stylesheet" href="/section.css">
+  <link rel="stylesheet" href="/products.css">
+  <link rel="stylesheet" href="/footer.css">
+</head>
+
+<body>
+
+  <header>
+
+    <div class="market-logo">
+      <a href="/main-page.html">
+        <img src="/Images/pngimg.com - bmw_PNG99545.png" alt="">
+        <h1>Go Tune</h1>
+      </a>
+    </div>
+
+    <div class="shopping-cart" title="Cosul tau cu produse">
+      <i class="fa-solid fa-cart-shopping fa-2x"></i>
+      <span class="quantity">0</span>
+    </div>
+
+    <div class="cart">
+      <div class="cart-title-close-btn-container">
+        <div class="cart-title-box">
+          <h1>Cosul meu</h1>
+        </div>
+
+        <div class="closeShopping-box" title="Inchide cosul">
+          <spa class="closeShopping"><i class="fa-solid fa-x"></i></span>
+        </div>
+      </div>
+
+      <ul class="listCart">
+
+      </ul>
+
+      <div class="checkOut">
+
+        <div class="total">
+
+          <span class="total-title">Total:</span>
+          <span class="total-amount">0</span>
+          <span class="total-currency">Lei</span>
+
+        </div>
+
+        <div class="continue-to-payment">
+          <span>Continua la plata</span>
+          <i class="fa-solid fa-chevron-right"></i>
+        </div>
+
+      </div>
+    </div>
+
+  </header>
+
+  <nav class="main-page-nav">
+    <div class="nav-products-categories">
+      <a href="/products-categories/Hanorace.html"><span>Hanorace</span></a>
+      <a href="/products-categories/Bluze.html"><span>Bluze</span></a>
+      <a href="/products-categories/Tricouri.html"><span>Tricouri</span></a>
+      <a href="/products-categories/Sepci.html"><span>Sepci</span></a>
+      <a href="/products-categories/Stickere.html"><span>Stikere</span></a>
+      <a href="/products-categories/Contact.html"><span>Contact</span></a>
+    </div>
+  </nav>
+
+  <section class="main-page-section">
+
+    <div class="products-list-container">
+      <div class="products-list-title">
+        <a href="/main-page.html" title="Inapoi la pagina principala"></i><span><i
+              class="fa-solid fa-angle-left"></i>Inapoi</span></a>
+        <span class="list-title">Bluze</span>
+        <div class="products-list-search-container">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input type="text" name="" id="search-item" placeholder="Cauta produs" onkeyup="search()">
+        </div>
+      </div>
+      <div class="products-list" id="products-list">
+        <div class="product">
+          <div class="product-thumbnail">
+            <a href="/products/bluza1.html">
+              <img src="/Images/1B.png" alt="">
+            </a>
+          </div>
+          <div class="product-title">
+            <a href="/products/bluza1.html">
+              <h3>Bluza1</h3>
+            </a>
+          </div>
+          <div class="product-price">
+            <span class="product-price-value">420.69</span>
+            <span class="product-currency">Lei</span>
+          </div>
+
+          <div class="product-button-container">
+            <button class="product-button" onclick="addToCart(10)">
+              <i class="fa-solid fa-cart-shopping"></i>Adauga
+            </button>
+          </div>
+        </div>
+        <div class="product">
+          <div class="product-thumbnail">
+            <a href="/products/bluza2.html">
+              <img src="/Images/1B.png" alt="">
+            </a>
+          </div>
+          <div class="product-title">
+            <a href="/products/bluza2.html">
+              <h3>Bluza2</h3>
+            </a>
+          </div>
+          <div class="product-price">
+            <span class="product-price-value">42425.24</span>
+            <span class="product-currency">Lei</span>
+          </div>
+
+          <div class="product-button-container">
+            <button class="product-button" onclick="addToCart(11)">
+              <i class="fa-solid fa-cart-shopping"></i>Adauga
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <footer class="main-page-footer">
+    <div class="main-page-footer-container">
+      <div class="main-page-footer-left-content">
+        <p>Contact</p>
+        <span>Numar de telefon: 0751 505 578</span>
+        <span>Email: market@gmail.com</span>
+      </div>
+      <div class="main-page-footer-right-content">
+        <a href=""><i class="fa-brands fa-facebook fa-2x"></i></a>
+        <a href=""><i class="fa-brands fa-twitter fa-2x"></i></i></a>
+        <a href=""><i class="fa-brands fa-instagram fa-2x"></i></i></a>
+        <a href=""><i class="fa-brands fa-tiktok fa-2x"></i></i></a>
+        <a href=""><i class="fa-brands fa-youtube fa-2x"></i></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/script.js"></script>
+</body>
+
+</html>

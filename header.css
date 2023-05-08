@@ -1,0 +1,283 @@
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  width: 100%;
+  background-color: rgb(40, 40, 40);
+  position: relative;
+}
+
+.market-logo a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 300px;
+  gap: 10px;
+}
+
+.market-logo img {
+  width: 60px;
+  height: 60px;
+}
+
+.market-logo h1 {
+  color: white;
+}
+
+.shopping-cart  {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  right: 30%;
+  cursor: pointer;
+}
+
+.shopping-cart:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+  transition: 1s;
+  border-radius: 40px;
+}
+
+.shopping-cart i {
+  width: 40px;
+  color: white;
+}
+
+.shopping-cart .quantity {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  background-color: rgb(40, 40, 40);
+  color: white;
+  width: auto;
+  height: 20px;
+  padding: 0 5px;
+  border-radius: 10px;
+  left: 60%;
+  top: 10%;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.cart{
+  position: fixed;
+  top: 0;
+  left: 100%;
+  width: 550px; 
+  background-color: rgba(40, 40, 40, 0.5);
+  height: 100%;
+  transition: 0.5s;
+  color: white;
+  border-left: 2px solid rgba(255, 255, 255, 0.3);
+  z-index: 100;
+}
+
+.active .cart {
+  left: calc(100% - 550px);
+}
+
+.active .main-page-section {
+  transform: translateX(-180px);
+}
+
+.cart-title-close-btn-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 10%;
+}
+
+.cart-title-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cart-title-box h1 {
+  margin: 0;
+}
+
+.closeShopping-box {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  color: white;
+  box-sizing: border-box;
+  padding: 0 40px;
+}
+
+.closeShopping {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.closeShopping:hover {
+  background-color: white;
+  transition: 2s;
+  border-radius: 40px;
+}
+
+.closeShopping:hover i {
+  color: black;
+  transition: 2s;
+}
+
+.listCart {
+  height: 80%;
+  overflow-y: auto;
+  margin: 0;
+  padding: 0;
+}
+
+.listCart li {
+  display: grid;
+  grid-template-columns: 100px 160px 40px 130px 100px;
+  color: white;
+  min-height: 100px;
+  align-items: center;
+  margin-bottom: 10px;
+  background-color: rgba(40, 40, 40, 0.8);
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+.cart-product-thumbnail img {
+  border-radius: 10px;
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+  object-position: center;
+}
+
+.cart-product-name {
+  display: flex;
+  box-sizing: border-box;
+  padding: 0 10px;
+  height: 100%;
+  align-items: center;
+  word-break: normal;
+  overflow-y: hidden;
+}
+
+.cart-product-name a {
+  text-decoration: none;
+  color: white;
+}
+
+.cart-product-price {
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+  padding: 0 10px;
+  height: 100%;
+  align-items: center;
+}
+
+.cart-product-price span {
+  margin-left: 10px;
+}
+
+.delete-product {
+  background-color: transparent;
+  border: none;
+  color: white;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+}
+
+.delete-product:hover {
+  background-color: white;
+  border-radius: 20px;
+  color: black;
+  transition: 1s;
+}
+
+.cart-product-quantity {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.cart-product-quantity button {
+  background-color: rgba(255, 255, 255, 0.3);
+  color: white;
+  cursor: pointer;
+}
+
+.checkOut {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  height: 10%;
+  background-color: rgb(40, 40, 40);
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  align-items: center;
+  color: white;
+}
+
+.total {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.total-title {
+  margin-right: 10px;
+}
+
+.total-currency {
+  margin-left: 10px;
+}
+
+.continue-to-payment {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  cursor: pointer;
+  height: 50px;
+  position: relative;
+  gap: 10px;
+}
+
+.continue-to-payment {
+  border-left: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.continue-to-payment:hover {
+  border: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.continue-to-payment span {
+  z-index: 4;
+}
+
+.continue-to-payment::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 0;
+  height: 100%;
+  color: black;
+  background-color: rgba(255, 255, 255, 0.3);
+  transition: 1s ease-in-out;
+  z-index: 3;
+}
+
+.continue-to-payment:hover::before {
+  width: 100%;
+}

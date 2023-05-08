@@ -1,0 +1,50 @@
+.main-page-nav {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 60px;
+  background-color: rgb(40, 40, 40);
+  color: white;
+  margin-top: 20px;
+}
+
+.nav-products-categories {
+  display: flex;
+  align-items: center;
+  width: 60%;
+  height: 100%;
+  justify-content: space-between;
+  font-size: 20px;
+  max-width: 1391.99px;
+}
+
+.nav-products-categories a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  width: 100px;
+  height: 70%;
+  position: relative;
+}
+
+.nav-products-categories a span {
+  z-index: 2;
+}
+
+.nav-products-categories a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.3);
+  transition: 1s ease-in-out;
+  z-index: 1;
+  border-radius: 10px;
+}
+
+.nav-products-categories a:hover::before {
+  width: 100%;
+}
